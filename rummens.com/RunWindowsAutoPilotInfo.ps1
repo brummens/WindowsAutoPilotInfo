@@ -56,10 +56,11 @@ Start-Transcript -Path $DirectoryPath\Transscript.log
     $listBox.Size = New-Object System.Drawing.Size(260,20)
     $listBox.Height = 80
 
-    [void] $listBox.Items.Add('WEB')
-    [void] $listBox.Items.Add('OFFICE-STANDARD')
-	  [void] $listBox.Items.Add('OFFICE-ADMIN')
-    [void] $listBox.Items.Add('SPECIAL')
+    [void] $listBox.Items.Add('KIOSK')
+    [void] $listBox.Items.Add('PERSONAL-ADMIN')
+    [void] $listBox.Items.Add('PERSONAL-USER')
+    [void] $listBox.Items.Add('SHARED-ADMIN')
+    [void] $listBox.Items.Add('SHARED-USER')
 
 
     $form.Controls.Add($listBox)
